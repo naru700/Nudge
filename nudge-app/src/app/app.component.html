@@ -1,39 +1,6 @@
-<div class="container">
-  <div class="column transcription">
-    <h3>Nudge Transcription</h3>
-    <p>Live transcription of the session will appear here once the meeting starts.</p>
-  </div>
+<nav class="tab-header">
+  <a routerLink="/nudge" routerLinkActive="active-tab" class="tab">Nudge</a>
+  <a routerLink="/finalround" routerLinkActive="active-tab" class="tab">Final Round</a>
+</nav>
 
-  <div class="column ai">
-    <h3>AI Insights</h3>
-    <p>AI insights will be available after the session starts.</p>
-  </div>
-
-  <div class="column video">
-    <h3>PCB design</h3>
-    <p>Live screen</p>
-    <video width="100%" controls>
-      <source src="assets/sample.mp4" type="video/mp4" />
-    </video>
-
-    <div class="section">
-      <h4>Controls</h4>
-      <button pButton label="Start session" icon="pi pi-play" class="p-button-raised p-button-primary full-width mb-2"></button>
-      <button pButton label="Leave this space" class="p-button-raised p-button-secondary full-width"></button>
-    </div>
-
-    <div class="section">
-      <h4>Important notes</h4>
-      <ul>
-        <li><strong>Start Session:</strong> Click on <strong>Start Session</strong> to begin the session.</li>
-        <li><strong>Microphone Access:</strong> Grant microphone access so that Huddle Mate can listen to the meeting.</li>
-        <li><strong>Screen/Tab Sharing (Optional):</strong> You can optionally share your screen or tab to enhance transcription accuracy.</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div class="footer">
-  <input type="text" pInputText placeholder="Have a different question? ask here..." />
-  <button pButton label="Send" class="p-button-secondary"></button>
-</div>
+<router-outlet></router-outlet>

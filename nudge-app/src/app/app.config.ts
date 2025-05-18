@@ -1,15 +1,12 @@
+// src/app/app.config.ts
 import { ApplicationConfig } from '@angular/core';
+import { provideRouter } from '@angular/router';
 import { provideAnimations } from '@angular/platform-browser/animations';
-import { providePrimeNG } from 'primeng/config';
-import Lara from '@primeng/themes/lara'; // or Aura
+import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideAnimations(),
-    providePrimeNG({
-      theme: {
-        preset: Lara
-      }
-    })
+    provideRouter(routes),
+    provideAnimations()
   ]
 };
