@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  height: calc(100vh - 60px);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.column {
+  flex: 1;
+  background: #f7f7f7;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-y: auto;
+}
+
+.video h4,
+.section h4 {
+  margin-top: 1.5rem;
+}
+
+.section {
+  margin-top: 1rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+  line-height: 1.5;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.footer {
+  display: flex;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  gap: 1rem;
+  align-items: center;
+
+  input {
+    flex: 1;
+  }
+}
