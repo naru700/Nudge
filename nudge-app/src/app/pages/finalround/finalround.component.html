@@ -1,0 +1,42 @@
+<div class="interview-container" style="display: flex; height: 100vh; width: 100vw; overflow: hidden;">
+  <!-- LEFT: Live Screen + Transcript -->
+  <div class="panel left" style="position: static; width: 25%; height: 100vh; background: #fff; box-shadow: 2px 0 8px rgba(0,0,0,0.05); z-index: 11;">
+    <div class="header">
+      <h3>Live Screen</h3>
+    </div>
+
+    <video #screenVideo class="video-box" autoplay muted></video>
+    <div style="display: flex; gap: 10px; margin-top: 10px;">
+      <button class="share-btn"
+              (click)="startScreenShare()"
+              style="padding: 10px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
+        <i class="pi pi-desktop" style="margin-right: 6px; font-size: 1.2em; vertical-align: middle;"></i>
+        Share Screen
+      </button>
+      <button class="mic-btn"
+              (click)="toggleMicrophone()"
+              style="padding: 10px; background-color: #28a745; color: #fff; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
+        <i class="pi pi-microphone" style="margin-right: 6px; font-size: 1.2em; vertical-align: middle;"></i>
+        Microphone
+      </button>
+    </div>
+
+    <h3>Live Transcription</h3>
+    <div class="transcript-box">Live transcript will appear here...</div>
+  </div>
+
+  <!-- CENTER: AI Answer -->
+  <div class="panel center" style="position: static; width: 50%; height: 100vh; background: #fff; box-shadow: 0 0 8px rgba(0,0,0,0.05); z-index: 9;">
+    <h3>AI Insights</h3>
+    <div class="ai-box">AI-generated response will be shown here...</div>
+  </div>
+
+  <!-- RIGHT: Previous Questions -->
+  <div class="panel right" style="position: static; width: 25%; height: 100vh; background: #fff; box-shadow: -2px 0 8px rgba(0,0,0,0.05); z-index: 10;">
+    <h3>Previous Questions</h3>
+    <ul class="history">
+      <li>What is the difference between let and var?</li>
+      <li>Explain Angular lifecycle hooks.</li>
+    </ul>
+  </div>
+</div>
